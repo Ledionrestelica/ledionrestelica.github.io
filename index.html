@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledion Restelica's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="start" class="section1">
+        <div class="top">
+            <div class="profile-pic-container animate-on-scroll">
+                <img class="profile-pic" src="pics/profile.JPG" alt="">
+            </div>
+            <div class="top-links animate-on-scroll">
+                <div class="about animate-on-scroll">
+                    <a href="about.html">
+                        <div>
+                            <img src="logos/account.png" alt="">
+                        </div>                  
+                        <p>About</p>
+                    </a>    
+                </div>
+                <div class="contact animate-on-scroll">
+                    <div>
+                        <img src="logos/inbox.png" alt="">
+                    </div>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle animate-on-scroll">
+            <div class="location animate-on-scroll">
+                <div>
+                    <img src="logos/location.png" alt="">
+                </div>
+                <p>Prishtina, Kosovo</p>
+            </div>
+            <div class="title animate-on-scroll">
+                <h1>Website Designer and FrontEnd developer</h1>
+            </div>
+            <div class="description animate-on-scroll">
+                Hey, I am Ledion Restelica, a passionate Website designer & Frontend developer.
+            </div>
+            <div class="all-projects animate-on-scroll">
+                <a href="#home">
+                    <button class="all-projectsbtn animate-on-scroll">
+                        All Projects
+                        <img class="button-arrow animate-on-scroll" src="logos/arrow.png" alt="">
+                    </button>
+                    
+                </a>
+                <button id="copy-button" class="contact-button animate-on-scroll">E-Mail</button>
+                <a href="mailto:ledionrestelica7@gmail.com">
+                    <button class="contact-button animate-on-scroll">Contact</button>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <section id="home" class="section2">
+        <div class="project-header animate-on-scroll">
+            <h1>Crafted with Love, Passion</h1>
+            <p>Lists of projects i made during my free time</p>
+        </div>
+        <div class="single-project animate-on-scroll">
+            <div class="image-row">
+                <img src="pics/gjirafa50png.png" alt="">
+            </div>
+            <div class="text-row animate-on-scroll">
+                <h1>Gjirafa50 clone website</h1>
+                <p>A fun project i did on my free time, Source Code on <u>GitHub</u></p>
+                <button class="all-projectsbtn animate-on-scroll">
+                    View
+                    <img class="button-arrow" src="logos/arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="single-project animate-on-scroll">
+            <div class="text-row animate-on-scroll">
+                <h1>Clone website of my university platform</h1>
+                <p>A fun project when i first started learning HTML & CSS, Source Code on <u>GitHub</u></p>
+                <button class="all-projectsbtn animate-on-scroll">
+                    View
+                    <img class="button-arrow animate-on-scroll" src="logos/arrow.png" alt="">
+                </button>
+            </div>
+            <div class="image-row">
+                <img src="pics/aab.png" alt="">
+            </div>  
+        </div>
+        <div class="single-project">
+            <div class="image-row">
+                <img src="pics/youtube.png" alt="">
+            </div>
+            <div class="text-row">
+                <h1>Youtube clone website</h1>
+                <p>A fun project i did on my free time, Source Code on <u>GitHub</u></p>
+                <button class="all-projectsbtn">
+                    View
+                    <img class="button-arrow" src="logos/arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section3 animate-on-scroll">
+        <div class="help-you animate-on-scroll">
+            <div class="s3-title animate-on-scroll">
+                <h1>Ways i can help you.</h1>
+                <p>i'll make it easy for you</p>
+            </div>
+            <div class="cards-container animate-on-scroll">
+                <div class="card animate-on-scroll">
+                    <h1>Designing your website and all its features.</h1>
+                    <p>From product design to strategy, design systems, UI or UX. I solve complex problems through design, so you can achieve your business goals.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <h1>Building your website from scratch using HTML & CSS.</h1>
+                    <p>I can build, create and replicate most of modern websites.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>@Made by Me</p>
+            <a href="#start">
+                <button>
+                    <div>
+                        <img src="logos/arrow.png" alt="">
+                    </div>
+                </button>
+            </a>
+            
+        </div>
+    </footer>
+    <script>
+         // select the copy button
+         const copyButton = document.getElementById("copy-button");
+
+        // add event listener to copy button
+        copyButton.addEventListener("click", () => {
+        // get email address
+        const emailAddress = "ledionrestelica7@gmail.com";
+
+        // create temporary textarea element
+        const tempTextarea = document.createElement("textarea");
+        tempTextarea.value = emailAddress;
+        document.body.appendChild(tempTextarea);
+
+        // select and copy the email address
+        tempTextarea.select();
+        document.execCommand("copy");
+
+        // remove the temporary textarea element
+        document.body.removeChild(tempTextarea);
+
+        // notify the user that the email address has been copied
+        alert("Email address copied to clipboard!");
+        });
+
+        const copyButtoni = document.getElementById("copy-button");
+
+        copyButtoni.addEventListener("click", () => {
+            copyButtoni.innerHTML = ("Copied");
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll(".animate-on-scroll");
+
+        function animateOnScroll() {
+            elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementTop < windowHeight) {
+                element.classList.add("animate");
+            }
+            });
+        }   
+
+        window.addEventListener("scroll", animateOnScroll);
+        animateOnScroll(); // Run it once on page load
+        });
+
+    </script>
+</body>
+</html>

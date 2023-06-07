@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section1 animate-on-scroll">
+        <div class="top animate-on-scroll">
+            <div class="profile-pic-container animate-on-scroll">
+                <img class="profile-pic animate-on-scroll" src="pics/profile.JPG" alt="">
+            </div>
+            <div class="top-links animate-on-scroll">
+                <div class="home animate-on-scroll">
+                    <a href="index.html">
+                        <div class="animate-on-scroll">
+                            <img src="logos/home.png" alt="">
+                        </div>                  
+                        <p class="animate-on-scroll">Home</p>
+                    </a>
+                    
+                </div>
+                <div class="contact animate-on-scroll">
+                    <div class="animate-on-scroll">
+                        <img src="logos/inbox.png" alt="">
+                    </div>
+                    <p class="animate-on-scroll">Contact</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle animate-on-scroll">
+            <div class="about-title about animate-on-scroll">
+                <div class="animate-on-scroll">
+                    <img src="logos/account.png" alt="">
+                </div>                  
+                <p class="animate-on-scroll">About</p>
+            </div>
+            <div class="middle-title animate-on-scroll">
+                <h1 class="animate-on-scroll">Hey again, I'm Ledion.</h1>
+                <p class="animate-on-scroll">A passionate FrontEnd developer from Prishtina, Kosovo</p>
+            </div>
+            <div class="paragraphs-image animate-on-scroll">
+                <img src="pics/profile.JPG" alt="">
+                <p class="animate-on-scroll">
+                    I'm John Doe and I'm a UI UX designer and software developer living in Brooklyn, interested in how people and software can work together to make life better. I'm currently at Xcompany.
+                </p>
+                <p class="animate-on-scroll">
+                    I previously worked at Ycompany, where I designed experiences and interfaces to help millions of people get jobs. I started on the marketing design side, honing my visual design skills and learning the ins and outs of keyframe animation.
+                </p>
+                <p class="animate-on-scroll">
+                    I care a lot about people and value empathy, transparency, vulnerability, and trust more than anything. I consider myself a generalist who wants to make things that help others at the end of the day.
+                </p>
+                <p class="animate-on-scroll">
+                    Outside of design, I love food in all capacities. I spend my time exploring new restaurants, cooking new dishes, and talking about my next meal.
+                </p>
+                <p class="animate-on-scroll">
+                    Do you have a project in mind? I'm always on the lookout for interesting collaborations.
+                </p>
+
+                <h1 class="animate-on-scroll">Experience and Education</h1>
+                <p>Looking to fill this section up with experience</p>
+                <div class="edu-ex animate-on-scroll">
+                    <div class="card-edu">
+                        <h1>Education:  </h1>
+                        <p>High School Diploma - Economics</p>
+                        <p>CURRENT - Bachelor Degree AAB College</p>
+                    </div>
+                    <div class="card-edu animate-on-scroll">
+                        <h1>Experience</h1>
+                        <p>Certified digital marketer</p>
+                        <p>By: World Bank, KODE</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script> 
+        document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll(".animate-on-scroll");
+
+        function animateOnScroll() {
+            elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementTop < windowHeight) {
+                element.classList.add("animate");
+            }
+            });
+        }   
+
+        window.addEventListener("scroll", animateOnScroll);
+        animateOnScroll(); // Run it once on page load
+        });
+    </script>
+</body>
+</html>
