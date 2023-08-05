@@ -13,6 +13,7 @@ body {
   background-color: #1a1a1a;
   padding-left: auto;
   padding-right: auto;
+  overflow-x: hidden;
 }
 
 .section1 {
